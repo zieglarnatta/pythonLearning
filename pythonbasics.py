@@ -18,12 +18,11 @@ numbers.append(2)
 numbers.append(3)
 
 # use the append method to add the names to strings array / List
-strings.append("John")
-strings.append("Eric")
-strings.append("Jessica")
+strings.append("Hello")
+strings.append("World")
 
 # print out the second name. Note the array index starts with 0
-second_name = strings(1)
+second_name = names[1]
 
 
 # this code should write out the filled arrays and the second name in the names list (Eric).
