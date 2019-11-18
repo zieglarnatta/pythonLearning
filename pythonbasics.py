@@ -138,7 +138,7 @@ PYTHON"[1] (always start counting from 0!)
 """
 fifth_letter = "MONTY"[4]
 
-print fifth_letter
+print (fifth_letter)
 # string lengths
 
 parrot = ('Norwegian Blue')
@@ -171,15 +171,15 @@ print (ministry.upper())
 string_1 = "Camelot"
 string_2 = "place"
 
-print "Let's not go to %s. 'Tis a silly %s." % (string_1, string_2)
+print ("Let's not go to %s. 'Tis a silly %s." % (string_1, string_2))
 
 # gaining raw input from console snd concatenating string from variable value
-quest = raw_input("What is your quest? ")
-name = raw_input("What is your name? ")
-color = raw_input("What is your favorite color? ")
+quest = input("What is your quest? ")
+name = input("What is your name? ")
+color = input("What is your favorite color? ")
 
-print "Ah, so your name is %s, your quest is %s, " \
-"and your favorite color is %s." % (name, quest, color)
+print ("Ah, so your name is %s, your quest is %s, " \
+"and your favorite color is %s." % (name, quest, color))
 
 # date & time
 from datetime import datetime
@@ -202,4 +202,4 @@ print (now.microsecond)
 # use spacing along with displaying the variable's value
 from datetime import datetime
 now = datetime.now()
-print '%02d/%02d/%04d' % (now.month, now.day, now.year)
+print ('(%02d/%02d/%04d' % (now.month, now.day, now.year))
