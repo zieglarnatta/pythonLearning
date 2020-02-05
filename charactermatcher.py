@@ -35,5 +35,5 @@ class Charactermatcher:
                     print (string1[l])
           # increment the l to continue moving to the next char in string1
                 l += 1
-        pass
+    pass
 Charactermatcher.charactermatcher()
