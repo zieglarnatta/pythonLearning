@@ -158,6 +158,11 @@ parrot = "norwegian blue"
 print ('Printing out the uppercase of the parrot variable which contains: ' + str(parrot))
 print (parrot.upper())
 
+# title
+parrot = "norwegian blue"
+print ('Printing out the uppercase of the parrot variable which contains: ' + str(parrot))
+print (parrot.title())
+
 # practice diffrentiating between upper & lowercase which only owrks as a dot operator, while len() and str() works on any data types
 ministry = "The Ministry of Silly Walks"
 # on my own
@@ -168,10 +173,10 @@ print ('uppercase conversion of the above mentioned ministry variable:')
 print (ministry.upper())
 
 # concatenating string with variable values using %
-string_1 = "Camelot"
-string_2 = "place"
+string_1 = 'Camelot'
+string_2 = 'place'
 
-print ("Let's not go to %s. 'Tis a silly %s." % (string_1, string_2))
+print (f"Let's not go to {string_1}. Tis a silly {string_2}.")
 
 # gaining raw input from console snd concatenating string from variable value
 quest = input("What is your quest? ")
@@ -202,4 +207,16 @@ print (now.microsecond)
 # use spacing along with displaying the variable's value
 from datetime import datetime
 now = datetime.now()
-print ('(%02d/%02d/%04d' % (now.month, now.day, now.year))
+print ('(%02d/%02d/%04d)' % (now.month, now.day, now.year))
+
+
+class Car():
+    def __init__(self, color, year):
+        self.color = color  # sets the attribute color to the value passed in
+        self.year = year
+
+
+ford = Car("blue", 2016)  # create a car object with the color blue and year 2016
+subaru = Car("red", 2018)  # create a car object with the color red and year 2018
+print(ford.color, ford.year)
+print(subaru.color, subaru.year)
