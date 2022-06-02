@@ -14,7 +14,7 @@ ${kingCounty}               https://kingcounty.gov/depts/transportation/metro/al
 ${kingCountyExisting}       https://public.govdelivery.com/accounts/WAKING/subscriber/new
 ${nyMetro}                  https://mymtaalerts.com/Subscribe.aspx
 
-${phoneNum}                 (805) 485-6975     #
+${phoneNum}                 (509) 236-3003     #
 #${phoneNum}                 (509) 236-1901     #1ed82QBY
 #${phoneNum}                 (845) 777-7123     #uZqDIpMx
 #${phoneNum}                 (509) 239-7060     #MaxT0edw
@@ -179,8 +179,8 @@ ${phoneNum}                 (805) 485-6975     #
 #${existingphoneNum}                 (510) 977-8227‬
 #${existingphoneNum}                 (646) 480-9968
 #${existingPhoneNum}         2068675309   #O5TZvW8g   pwd
-${existingPhoneNum}         8054856975
-${existingPwd}              BeMhEfYG
+${existingPhoneNum}         5092363003
+${existingPwd}              QiZvFNvm
 #${existingPwd}              O5TZvW8g
 #${existingPwd}              3043714237    #unknown password
 #${existingPwd}              6fXN6S8E
@@ -239,7 +239,7 @@ Start KC signingup!
     log                                       click the submit button           console=yes
     capture page screenshot                 embed
 
-    Wait until element is visible           //*[@id="subscriber_subscriptions_form"]/div[2]/input[1]            10
+    Wait until element is visible           help            10
 
     FOR   ${j}    IN   @{needToExpand}
         log   ${j}
