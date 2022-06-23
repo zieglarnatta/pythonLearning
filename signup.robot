@@ -14,7 +14,9 @@ ${kingCounty}               https://kingcounty.gov/depts/transportation/metro/al
 ${kingCountyExisting}       https://public.govdelivery.com/accounts/WAKING/subscriber/new
 ${nyMetro}                  https://mymtaalerts.com/Subscribe.aspx
 
-${phoneNum}                 ‪(509) 250-8010‬     #ZqmWuUc7
+${phoneNum}                 ‪(814) 523-4147‬     #F7OzN6F8
+#${phoneNum}                 ‪(408) 752-2308‬     #5cQRs76a
+#${phoneNum}                 ‪(509) 250-8010‬     #ZqmWuUc7
 #${phoneNum}                 ‪(509) 245-0818‬     #vR5ZbuqT
 #${phoneNum}                 ‪(830) 333-4307     #VW6IGxX1
 #${phoneNum}                 ‪(978) 400-3565     #IFTVCI0Z
@@ -205,8 +207,8 @@ ${phoneNum}                 ‪(509) 250-8010‬     #ZqmWuUc7
 #${existingphoneNum}                 (510) 977-8227‬
 #${existingphoneNum}                 (646) 480-9968
 #${existingPhoneNum}         2068675309   #O5TZvW8g   pwd
-${existingPhoneNum}         ‪8609711285
-${existingPwd}              LGuAhaEB
+${existingPhoneNum}         ‪408
+${existingPwd}              5cQRs76a
 #${existingPwd}              O5TZvW8g
 #${existingPwd}              3043714237    #unknown password
 #${existingPwd}              6fXN6S8E
@@ -302,8 +304,10 @@ Existing signup
     Select From List By Value               subscription_type       phone
     #Capture element screenshot              subscription_type       embed
     Wait until element is visible           phone
-    #Clear element text                      phone
+    Clear element text                      phone
     Input text                              phone        ${existingPhoneNum}              clear=True
+    Input text                              phone        7522308
+    Sleep    15
     log                                     inputting phone number ${existingPhoneNum} into page           console=yes
     Wait until element is visible           //*[@id="quick_subscribe_new"]/div[2]/input[1]
     log                                     Waiting on button                                     console=yes
