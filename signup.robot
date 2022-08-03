@@ -11,10 +11,11 @@ Suite Teardown           close Browser
 ${BROWSER}                    chrome    #uncomment this to test via Firefox
 #${BROWSER}                  geckodriver    #uncomment this to test via Firefox
 ${kingCounty}               https://kingcounty.gov/depts/transportation/metro/alerts-updates/signup.aspx
-${kingCountyExisting}       https://public.govdelivery.com/accounts/WAKING/subscriber/new
+${kingCountyExisting}       htt#ps://public.govdelivery.com/accounts/WAKING/subscriber/new
 ${nyMetro}                  https://mymtaalerts.com/Subscribe.aspx
 
-${phoneNum}                 (509) 253-1048‬      #qAdmPC4G
+${phoneNum}                 (201) 903-0429‬      #
+#${phoneNum}                 (509) 253-1048‬      #qAdmPC4G
 #${phoneNum}                 (304) 981-1967‬      #mkcTsJNQ
 #${phoneNum}                 (509) 266-0454‬      #Z5nifQfF
 #${phoneNum}                 (509) 236-1425‬      #ldmRQ8Si
