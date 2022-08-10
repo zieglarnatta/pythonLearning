@@ -47,7 +47,7 @@ ${phoneNum}      (509) 245-7501‬     #otLFW1we
 #${phoneNum}      (872) 279-5556     #cb45oVV9
 #${phoneNum}      (509) 257-3500     #Io187DtL
 #${phoneNum}      (323) 334-1655     #7TprADka
-#${phoneNum}      (408) 740-3321     ‬#EOngLqHS
+#${phoneNum}      (408) 740-3321     #EOngLqHS
 #${phoneNum}      (208) 252-6666     #OVDeC2T4
 #${phoneNum}      (509) 245-0825     #FMDjyZ8X
 #${phoneNum}      (509) 253-1023     #3abED3RO
@@ -61,7 +61,7 @@ ${phoneNum}      (509) 245-7501‬     #otLFW1we
 #${phoneNum}      (978) 400-3565     #IFTVCI0Z
 #${phoneNum}      (626) 210-0241     #6VasAa7M
 #${phoneNum}      (530) 763-2730     #lRkkeoIB
-#${phoneNum}      (509) 266-0243‬     #NW9OoWGq
+#${phoneNum}      (509) 266-0243     #NW9OoWGq
 #${phoneNum}      (509) 266-0575     #LJItv6Oi
 #${phoneNum}      (628) 270-6850     #354iTExr
 #${phoneNum}      (509) 245-0805     #HV5TjZJm
