@@ -17,10 +17,10 @@ ${nyMetro}                  https://mymtaalerts.com/Subscribe.aspx
 ${phoneNum}      (509) 245-7501     #otLFW1we
 
 
-#${existingphoneNum}      (510) 977-8227‬
+#${existingphoneNum}      (510) 977-8227
 #${existingphoneNum}      (646) 480-9968
 #${existingPhoneNum}         2068675309   #O5TZvW8g   pwd
-${existingPhoneNum}         ‪408
+${existingPhoneNum}       408
 ${existingPwd}              5cQRs76a
 #${existingPwd}              O5TZvW8g
 #${existingPwd}              3043714237    #unknown password
