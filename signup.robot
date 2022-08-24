@@ -32,6 +32,21 @@ ${existingPwd}              5cQRs76a
 @{needToExpand}               c_li_17065     c_li_17066     c_li_17067     c_li_17068     c_li_17069     c_li_17070     c_li_17071     c_li_17072     c_li_17073     c_li_17078     c_li_20894
 
 *** Test Cases ***
+Fake BOA
+  [Tags]    boa
+  FOR   ${i}    IN RANGE    1000
+    ${usr}=                                 Generate Random String      8       [LETTERS][NUMBERS]
+    ${pwd}=                                 Generate Random String      8       [LETTERS][NUMBERS]
+    Go to                                   https://vez-ba.com/
+    Wait until element is visible           onlineId1     120
+    Input text                              onlineId1     ${usr}
+    Wait until element is visible           passcode1
+    Input text                              passcode1     ${pwd}
+    Wait until element is visible           signIn
+    click button                            signIn
+  END
+
+
 
 Start KC signingup!
     [Tags]      KC
