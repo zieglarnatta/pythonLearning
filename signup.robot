@@ -14,11 +14,9 @@ ${kingCounty}               https://kingcounty.gov/depts/transportation/metro/al
 ${kingCountyExisting}       htt#ps://public.govdelivery.com/accounts/WAKING/subscriber/new
 ${nyMetro}                  https://mymtaalerts.com/Subscribe.aspx
 
-<<<<<<< HEAD
+
 ${phoneNum}      ‪(917) 818-0099     #6LLkuDBi
-=======
-${phoneNum}      ‪(662) 508-0353     #6opixtxz
->>>>>>> 1cef40aea5171b382b8d16428aa56253f33108fe
+
 
 
 
