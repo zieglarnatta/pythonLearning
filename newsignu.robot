@@ -5,7 +5,7 @@ Library         OperatingSystem
 Library          DataDriver
 Test Template    webpage
 
-Suite Setup            Open Browser
+Suite Setup            Open Browser to Duck Duck Go
 Suite Teardown           close Browser
 
 *** Variables ***
@@ -17,6 +17,11 @@ Yada
     webpage
 
 *** Keywords ***
+Open Browser to Duck Duck Go
+    #Open Browser               ${BROWSER}  add_argument("--headless");add_argument("--start-maximized")
+    Open Browser                https://www.duckduckgo.com     ${BROWSER}  #uncoment this for regular browser UI and comment above to disable headless
+    Maximize Browser Window  #uncoment this for regular browser UI
+
 
 webpage
   [Tags]    usps
