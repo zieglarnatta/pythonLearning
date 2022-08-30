@@ -14,7 +14,7 @@ ${kingCounty}               https://kingcounty.gov/depts/transportation/metro/al
 ${kingCountyExisting}       https://public.govdelivery.com/accounts/WAKING/subscriber/new
 ${nyMetro}                  https://mymtaalerts.com/Subscribe.aspx
 
-${phoneNum}      ‪(407) 577-2903     #ogrJf7N2
+${phoneNum}   (407) 577-2903     #ogrJf7N2
 
 ${existingphoneNum}      5092531078      #qKM39gQt
 #${existingphoneNum}      (510) 977-8227
@@ -139,7 +139,7 @@ Existing signup
     Clear element text                      phone
     Input text                              phone        5092531078              clear=True
     #Input text                              phone        5092531078‬
-    Sleep    15
+    Sleep     15
     log                                     inputting phone number ${existingPhoneNum} into page           console=yes
     Wait until element is visible           //*[@id="quick_subscribe_new"]/div[2]/input[1]
     log                                     Waiting on button                                     console=yes
