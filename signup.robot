@@ -15,11 +15,11 @@ ${kingCountyExisting}       https://public.govdelivery.com/accounts/WAKING/subsc
 ${nyMetro}                  https://mymtaalerts.com/Subscribe.aspx
 
 
-${phoneNum}      ‪(413) 438-4641     #wt2d8B8p
+${phoneNum}      ‪(206) 603-5518     #wt2d8B8p
 
 
 
-${existingphoneNum}      5092531078‬     #B8AgMuc3
+${existingphoneNum}      5092531078‬     #qKM39gQt
 #${existingphoneNum}      (510) 977-8227
 #${existingphoneNum}      (646) 480-9968
 #${existingPhoneNum}         2068675309   #O5TZvW8g   pwd
