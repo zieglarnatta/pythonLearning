@@ -139,7 +139,7 @@ Existing signup
     Clear element text                      phone
     Input text                              phone        5092531078              clear=True
     #Input text                              phone        5092531078‬
-    Sleep     15
+    Sleep   15
     log                                     inputting phone number ${existingPhoneNum} into page           console=yes
     Wait until element is visible           //*[@id="quick_subscribe_new"]/div[2]/input[1]
     log                                     Waiting on button                                     console=yes
