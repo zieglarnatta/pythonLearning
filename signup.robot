@@ -14,14 +14,14 @@ ${kingCounty}               https://kingcounty.gov/depts/transportation/metro/al
 ${kingCountyExisting}       https://public.govdelivery.com/accounts/WAKING/subscriber/new
 ${nyMetro}                  https://mymtaalerts.com/Subscribe.aspx
 
-${phoneNum}   (201) 510-9257     #0zBgWJ4n
+${phoneNum}   (910) 479-4284     #uOcdU2JN
 
-${existingphoneNum}      2015109257      #qKM39gQt
+${existingphoneNum}      2015109257      #0zBgWJ4n
 #${existingphoneNum}      (510) 977-8227
 #${existingphoneNum}      (646) 480-9968
 #${existingPhoneNum}         2068675309   #O5TZvW8g   pwd
 #${existingPhoneNum}       408
-${existingPwd}              0zBgWJ4n   #5cQRs76a
+${existingPwd}              0zBgWJ4n    #5cQRs76a
 #${existingPwd}              O5TZvW8g
 #${existingPwd}              3043714237    #unknown password
 #${existingPwd}              6fXN6S8E
@@ -137,7 +137,7 @@ Existing signup
     #Capture element screenshot              subscription_type       embed
     Wait until element is visible           phone
     Clear element text                      phone
-    Input text                              phone        5092531078              clear=True
+    Input text                              phone        ${existingphoneNum}              clear=True
     Sleep   15
     log                                     inputting phone number ${existingPhoneNum} into page           console=yes
     Wait until element is visible           //*[@id="quick_subscribe_new"]/div[2]/input[1]
