@@ -14,7 +14,8 @@ ${kingCounty}               https://kingcounty.gov/depts/transportation/metro/al
 ${kingCountyExisting}       https://public.govdelivery.com/accounts/WAKING/subscriber/new
 ${nyMetro}                  https://mymtaalerts.com/Subscribe.aspx
 
-${phoneNum}   (509) 635-3750     #IChmTwua
+${phoneNum}   (570) 325-1358     #KXwf8HJQ
+${email}      ezqgeqrvncjdluib@gmail.com    #
 
 ${existingphoneNum}      2015109257      #0zBgWJ4n
 #${existingphoneNum}      (510) 977-8227
@@ -61,10 +62,18 @@ Start KC signingup!
     Wait until element is visible           subscription_type
 
     log                                     Selecting Phone number           console=yes
-    Select From List By Value               subscription_type       phone
-    capture element screenshot              subscription_type       embed
-    Wait until element is visible           //*[@id="phone"]
-    Input text                              //*[@id="phone"]        ${phoneNum}              clear=True
+
+    ${phoneSize}=    Get length   ${phoneNum}
+    ${emailSize}=    Get length   ${email}
+    IF      ${phoneSize} > 0
+        Select From List By Value               subscription_type       phone
+        capture element screenshot              subscription_type       embed
+        Wait until element is visible           //*[@id="phone"]
+        Input text                              //*[@id="phone"]        ${phoneNum}              clear=True
+    ELSE IF     ${emailSize} > 0
+        Wait until element is visible           //*[@id="email"]
+        Input text                              //*[@id="email"]        ${email}              clear=True
+    END
 
     log                                     inputting phone number ${phoneNum} into page           console=yes
 
