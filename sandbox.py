@@ -10,6 +10,6 @@ i1 = str(i) #cast it as a string
 # checkPNG =
 if os.path.exists("selenium-screenshot-+i1.png"):
     print(i1)
-sys.stdout.write()
+sys.stdout.write('yada')
 sys.stdout.flush()
 sys.exit(0)
