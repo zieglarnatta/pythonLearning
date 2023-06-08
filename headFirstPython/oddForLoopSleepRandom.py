@@ -13,7 +13,7 @@ for i in range(5):
         changeToChar = str(i)
         randTime = random.randint(1, 6)
         randTimeChar = str(randTime)
-        print("The random integer generated for the sleeo timer will be: "+ randTimeChar)
+        print("The random integer generated for the sleep timer will be: "+ randTimeChar)
         print("For loop run number " + changeToChar + ":")
         if right_this_hour in odds:
                 print("Hour If test")
