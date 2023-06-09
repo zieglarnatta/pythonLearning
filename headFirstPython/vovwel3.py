@@ -7,6 +7,6 @@ growList = []
 for letter in word:
     if letter in vowels:
         if letter not in growList:
-            gfound.append(letter)
-for  vowel in found:
+            growList.append(letter)
+for  vowel in growList:
     print(vowel)
