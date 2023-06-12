@@ -14,7 +14,7 @@ ${kingCounty}               https://kingcounty.gov/depts/transportation/metro/al
 ${kingCountyExisting}       https://public.govdelivery.com/accounts/WAKING/subscriber/new
 ${nyMetro}                  https://mymtaalerts.com/Subscribe.aspx
 
-${phoneNum}    ‪4242268769‬‬     #pFWPKIQr
+${phoneNum}    ‪4242268769    #pFWPKIQr
 ${email}      ezqgeqrvncjdluib@gmail.com    #
 
 ${existingphoneNum}      2015109257      #0zBgWJ4n
@@ -57,12 +57,15 @@ Start KC signingup!
 
     ${phoneSize}=    Get length   ${phoneNum}
     ${emailSize}=    Get length   ${email}
+
     IF      ${phoneSize} > 0
         Select From List By Value               subscription_type       phone
         capture element screenshot              subscription_type       embed
-        Wait until element is visible           //*[@id="phone"]
+        Wait until element is visible           phone
         ${phoneNum}=       Convert to String   ${phoneNum}
-        Input text                              //*[@id="phone"]        ${phoneNum}              clear=True
+        Set Global Variable           ${phoneNum}
+        Input text                              phone        ${phoneNum}              clear=True
+
     ELSE IF     ${emailSize} > 0
         Wait until element is visible           //*[@id="email"]
         Input text                              //*[@id="email"]        ${email}              clear=True
@@ -78,30 +81,30 @@ Start KC signingup!
 
     #next page
     log                                     Waiting on Wireless Number Page           console=yes
-    wait until element is visible           //*[@id="subscriber_phone_confirm"]
-    Input text                              //*[@id="subscriber_phone_confirm"]        ${phoneNum}              clear=True
+    wait until element is visible           subscriber_phone_confirm
+    Input text                              subscriber_phone_confirm        ${phoneNum}              clear=True
     log                                     Inserted Wireless Number Page           console=yes
 
-    wait until element is visible           //*[@id="subscriber_password"]
-    Input text                              //*[@id="subscriber_password"]          ${pwd}              clear=True
+    wait until element is visible           subscriber_password
+    Input text                              subscriber_password          ${pwd}              clear=True
     log                                     Typed Bogus Password           console=yes
 
-    wait until element is visible           //*[@id="subscriber_password_confirm"]
-    Input text                              //*[@id="subscriber_password_confirm"]      ${pwd}              clear=True
+    wait until element is visible           subscriber_password_confirm
+    Input text                              subscriber_password_confirm      ${pwd}              clear=True
     log                                       confirmed Bogus Password           console=yes
 
-    wait until element is visible           //*[@id="subscriber_privacy_consent"]
-    click element                           //*[@id="subscriber_privacy_consent"]
+    wait until element is visible           subscriber_privacy_consent
+    click element                           subscriber_privacy_consent
     log                                       click the consent           console=yes
 
-    wait until element is visible           //*[@id="col3"]/form/div[4]/input[1]
-    click element                           //*[@id="col3"]/form/div[4]/input[1]
+    wait until element is visible           name:commit
+    click element                           name:commit
     log                                     Yo! Solve the Captcha you have 40 seconds!           console=yes
     #Sleep                                   40
-    log                                       click the submit button           console=yes
+#    log                                       click the submit button           console=yes
     capture page screenshot                 embed
 
-    Wait until element is visible           //*[@id="subscriber_subscriptions_form"]/div[2]/input[1]            10
+    Wait until element is visible           subscription_tree            10
 
     FOR   ${j}    IN   @{needToExpand}
         log   ${j}
@@ -118,8 +121,8 @@ Start KC signingup!
     END
 
     #submit all checked
-    Wait until element is visible           //*[@id="subscriber_subscriptions_form"]/div[2]/input[1]     10
-    click button                            //*[@id="subscriber_subscriptions_form"]/div[2]/input[1]
+    Wait until element is visible           name:commit     10
+    click button                            name:commit
 
     #log out
     Scroll Element Into View                //*[@id="col3"]/p[1]/a
