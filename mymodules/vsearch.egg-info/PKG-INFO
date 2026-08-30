@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: vsearch
+Version: 1.0
+Summary: Python Phrase Search Tools
+Home-page: https://github.com/zieglarnatta/pythonLearning
+Author: Zieglarnatta
+Author-email: yada@yada.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: summary

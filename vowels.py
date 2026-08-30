@@ -21,7 +21,9 @@ while True:
         else:
             if eachLetter not in notFound:
                 notFound.append(eachLetter)
+    print('Here are all the non vowel collection ignoring repeats:')
     for extract in notFound:
         print(extract)
+    print('Here are all the vowels ignoring repeats:')
     for vowel in found:
         print(vowel)
